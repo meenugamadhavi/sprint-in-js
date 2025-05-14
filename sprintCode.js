@@ -6,8 +6,6 @@
 // args length
 // args cell locations
 
-// sample input 8 123 10 16 1 2 1 2 9 123 0 0 1 11 12 3
-
 const add = (number1, number2) => number1 + number2;
 const sub = (number1, number2) => number1 - number2;
 const equal = (number1, number2) => number1 === number2;
@@ -44,7 +42,6 @@ const lessThanOrEqual = function (sprintCode, location, operation) {
 const addSub = function (sprintCode, location, operation) {
   const number1 = getNumber(sprintCode, sprintCode[location + 1]);
   const number2 = getNumber(sprintCode, sprintCode[location + 2]);
-  console.log(number1, number2);
   const result = sprintCode[location + 3];
   sprintCode[result] = operation(number1, number2);
 
